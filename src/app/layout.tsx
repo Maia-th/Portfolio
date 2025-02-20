@@ -85,6 +85,41 @@ export const metadata: Metadata = {
   ],
 };
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Thiago Maia",
+  url: "https://maia-portfolio.vercel.app",
+  image: "https://maia-portfolio.vercel.app/assets/images/og-Image.jpg",
+  sameAs: ["https://www.linkedin.com/in/maiath/", "https://github.com/Maia-th"],
+  jobTitle: "Desenvolvedor Full Stack",
+  worksFor: {
+    "@type": "Organization",
+    name: "Freelancer",
+  },
+  knowsAbout: [
+    "Desenvolvimento Web",
+    "Frontend",
+    "Backend",
+    "React",
+    "Vue",
+    "Next.js",
+    "Nuxt.js",
+    "TypeScript",
+    "Node.js",
+    "Express",
+    "SQL",
+    "NoSQL",
+  ],
+  alumniOf: "Analise e Desenvolvimento de Sistemas",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Itabira",
+    addressRegion: "Minas Gerais",
+    addressCountry: "Brasil",
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
@@ -93,6 +128,10 @@ export default function RootLayout({
       <head>
         <meta charSet="UTF-8" />
         <meta name="msapplication-TileColor" content="#da532c" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
       </head>
       <body>{children}</body>
     </html>
