@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   authors: [{ name: "Thiago Maia" }],
   robots: "index, follow",
   manifest: "/assets/icons/favicon/site.webmanifest",
-  themeColor: "#ffffff",
   verification: {
     google: "KUdllg3h0Hm4QvB6X0fYdoPf1axcXtwNsGG1BEC2pD8",
   },
@@ -47,7 +46,7 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     images: [
       {
-        url: "/assets/icons/favicon/og-image.jpg",
+        url: "/assets/images/og-Image.jpg",
         width: 1200,
         height: 630,
         alt: "Portfolio de Serviços - Maia.Th",
@@ -59,19 +58,20 @@ export const metadata: Metadata = {
     title: "Portfolio de Serviços - Maia.Th",
     description:
       "Desenvolvedor Full Stack comprometido com a excelência técnica!",
-    images: ["/assets/icons/favicon/og-image.jpg"],
+    images: ["/assets/images/og-Image.jpg"],
   },
   icons: [
     {
       rel: "icon",
       type: "image/png",
-      url: "/assets/icons/favicon/favicon-96x96.png",
-      sizes: "96x96",
+      url: "/assets/icons/favicon/favicon-16x16.png",
+      sizes: "16x16",
     },
     {
       rel: "icon",
-      type: "image/svg+xml",
-      url: "/assets/icons/favicon/favicon.svg",
+      type: "image/png",
+      url: "/assets/icons/favicon/favicon-32x32.png",
+      sizes: "32x32",
     },
     {
       rel: "shortcut icon",
@@ -94,7 +94,7 @@ export default function RootLayout({
         <meta charSet="UTF-8" />
         <meta name="msapplication-TileColor" content="#da532c" />
       </head>
-      <body className="bg-white text-black">{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
