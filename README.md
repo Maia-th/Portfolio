@@ -4,10 +4,10 @@ Este é o repositório do meu portfólio pessoal, desenvolvido com foco em desem
 
 ### 🧰 Tecnologias utilizadas
 
-<div align="center">
-  <img alt="Next.js, Tailwind CSS, TypeScript" src="https://skillicons.dev/icons?i=nextjs,tailwindcss,ts">
-</div>
-
+* **Next.js**
+* **Tailwind CSS**
+* **shadcn/ui**
+* **TypeScript**
 ---
 
 ### 🌐 Disponível em: [https://maia-th.me/](https://maia-th.me/)
