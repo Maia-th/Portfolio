@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /admin/
 Allow: /
 
-Sitemap: https://maia-portfolio.vercel.app/sitemap.xml
+Sitemap: https://maia-th.me/sitemap.xml
