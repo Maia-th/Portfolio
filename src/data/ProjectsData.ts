@@ -2,6 +2,7 @@ import { ProjectContent } from '@/types/ProjectContent';
 
 export const projectsData: ProjectContent[] = [
   {
+    id: 1,
     title: "My Portfolio",
     languages: "TypeScript, React, Tailwind CSS",
     coverPath: "/images/portfolio-cover.png",

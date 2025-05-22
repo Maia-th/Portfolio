@@ -1,4 +1,5 @@
 export interface ProjectContent {
+  id: number
   title: string;
   languages: string;
   coverPath: string;
