@@ -32,7 +32,6 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Thiago Maia" }],
   robots: "index, follow",
-  manifest: "/assets/icons/favicon/site.webmanifest",
   verification: {
     google: "KUdllg3h0Hm4QvB6X0fYdoPf1axcXtwNsGG1BEC2pD8",
   },
@@ -60,29 +59,6 @@ export const metadata: Metadata = {
       "Desenvolvedor Front-End comprometido com a excelência técnica!",
     images: ["/assets/images/og-image.png"],
   },
-  icons: [
-    {
-      rel: "icon",
-      type: "image/png",
-      url: "/assets/icons/favicon/favicon-16x16.png",
-      sizes: "16x16",
-    },
-    {
-      rel: "icon",
-      type: "image/png",
-      url: "/assets/icons/favicon/favicon-32x32.png",
-      sizes: "32x32",
-    },
-    {
-      rel: "shortcut icon",
-      url: "/assets/icons/favicon/favicon.ico",
-    },
-    {
-      rel: "apple-touch-icon",
-      sizes: "180x180",
-      url: "/assets/icons/favicon/apple-touch-icon.png",
-    },
-  ],
 };
 
 const structuredData = {
@@ -127,7 +103,6 @@ export default function RootLayout({
     <html lang="pt-BR">
       <head>
         <meta charSet="UTF-8" />
-        <meta name="msapplication-TileColor" content="#da532c" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
