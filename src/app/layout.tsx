@@ -9,10 +9,10 @@ export const viewport = {
 export const metadata: Metadata = {
   title: "Portfolio - Maia",
   description:
-    "Desenvolvedor Full Stack especializado em React, JavaScript, TypeScript, Node.js, Express, bancos de dados SQL, HTML, CSS e Python. Oferecendo serviços de desenvolvimento frontend, backend e automação de processos.",
-  metadataBase: new URL("https://maia-portfolio.vercel.app"),
+    "Desenvolvedor Front-End especializado em React, Next.js, TypeScript e tecnologias modernas do ecossistema JavaScript.",
+  metadataBase: new URL("https://maia-th.me/"),
   keywords: [
-    "Desenvolvedor Full Stack",
+    "Desenvolvedor Front-End",
     "Frontend",
     "Backend",
     "React",
@@ -32,21 +32,20 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Thiago Maia" }],
   robots: "index, follow",
-  manifest: "/assets/icons/favicon/site.webmanifest",
   verification: {
     google: "KUdllg3h0Hm4QvB6X0fYdoPf1axcXtwNsGG1BEC2pD8",
   },
   openGraph: {
     title: "Portfolio de Serviços - Maia.Th",
     description:
-      "Desenvolvedor Full Stack comprometido com a excelência técnica!",
+      "Desenvolvedor Front-End comprometido com a excelência técnica!",
     siteName: "Portfolio - Maia",
     type: "website",
     url: "maia-portfolio.vercel.app",
     locale: "pt_BR",
     images: [
       {
-        url: "/assets/images/og-Image.jpg",
+        url: "/assets/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Portfolio de Serviços - Maia.Th",
@@ -57,32 +56,44 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Portfolio de Serviços - Maia.Th",
     description:
-      "Desenvolvedor Full Stack comprometido com a excelência técnica!",
-    images: ["/assets/images/og-Image.jpg"],
+      "Desenvolvedor Front-End comprometido com a excelência técnica!",
+    images: ["/assets/images/og-image.png"],
   },
-  icons: [
-    {
-      rel: "icon",
-      type: "image/png",
-      url: "/assets/icons/favicon/favicon-16x16.png",
-      sizes: "16x16",
-    },
-    {
-      rel: "icon",
-      type: "image/png",
-      url: "/assets/icons/favicon/favicon-32x32.png",
-      sizes: "32x32",
-    },
-    {
-      rel: "shortcut icon",
-      url: "/assets/icons/favicon/favicon.ico",
-    },
-    {
-      rel: "apple-touch-icon",
-      sizes: "180x180",
-      url: "/assets/icons/favicon/apple-touch-icon.png",
-    },
+};
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Thiago Maia",
+  url: "https://maia-th.me/",
+  image: "https://maia-th.me/assets/images/og-image.png",
+  sameAs: ["https://www.linkedin.com/in/maiath/", "https://github.com/Maia-th"],
+  jobTitle: "Desenvolvedor Front-End",
+  worksFor: {
+    "@type": "Organization",
+    name: "Freelancer",
+  },
+  knowsAbout: [
+    "Desenvolvimento Web",
+    "Frontend",
+    "Backend",
+    "React",
+    "Vue",
+    "Next.js",
+    "Nuxt.js",
+    "TypeScript",
+    "Node.js",
+    "Express",
+    "SQL",
+    "NoSQL",
   ],
+  alumniOf: "Analise e Desenvolvimento de Sistemas",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Itabira",
+    addressRegion: "Minas Gerais",
+    addressCountry: "Brasil",
+  },
 };
 
 export default function RootLayout({
@@ -92,7 +103,10 @@ export default function RootLayout({
     <html lang="pt-BR">
       <head>
         <meta charSet="UTF-8" />
-        <meta name="msapplication-TileColor" content="#da532c" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
       </head>
       <body>{children}</body>
     </html>
