@@ -41,11 +41,11 @@ export const metadata: Metadata = {
       "Desenvolvedor Front-End comprometido com a excelência técnica!",
     siteName: "Portfolio - Maia",
     type: "website",
-    url: "maia-portfolio.vercel.app",
+    url: "https://maia-th.me",
     locale: "pt_BR",
     images: [
       {
-        url: "/assets/images/og-image.png",
+        url: "https://maia-th.me/assets/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Portfolio de Serviços - Maia.Th",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     title: "Portfolio de Serviços - Maia.Th",
     description:
       "Desenvolvedor Front-End comprometido com a excelência técnica!",
-    images: ["/assets/images/og-image.png"],
+    images: ["https://maia-th.me/assets/images/og-image.png"],
   },
 };
 
