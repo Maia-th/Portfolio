@@ -22,7 +22,9 @@ export default function ProjectsPage() {
             width={30}
             height={30}
           />
-          <span className="text-lg font-bold text-gray-900">Maia.<span className="text-orange-500">Th</span></span>
+          <span className="text-lg font-bold text-gray-900">
+            Maia.<span className="text-orange-500">Th</span>
+          </span>
         </div>
         <div className="flex items-center gap-6">
           <a
@@ -84,62 +86,65 @@ export default function ProjectsPage() {
                   />
                 </div>
               )}
-              <div className="p-4 flex flex-col justify-center">
-              <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-              <p className="text-gray-700 mb-3">{project.description}</p>
-              <span className="text-sm text-orange-500 font-medium mb-3">
-                {project.languages}
-              </span>
-              <div className="flex gap-4 justify-end mt-auto">
-                {project.videoLink && (
-                  <a
-                    href={project.videoLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1 group text-gray-800 transition hover:text-orange-500"
-                  >
-                    <Image
-                      src={iconList.youtube}
-                      alt="Vídeo"
-                      width={22}
-                      height={22}
-                    />
-                    <span className="text-sm">Vídeo</span>
-                  </a>
-                )}
-                {project.codeLink && (
-                  <a
-                    href={project.codeLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1 group text-gray-800 transition hover:text-orange-500"
-                  >
-                    <Image
-                      src={iconList.code}
-                      alt="Código"
-                      width={22}
-                      height={22}
-                    />
-                    <span className="text-sm">Código</span>
-                  </a>
-                )}
-                {project.siteLink && (
-                  <a
-                    href={project.siteLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1 group text-gray-800 transition hover:text-orange-500"
-                  >
-                    <Image
-                      src={iconList.site}
-                      alt="Site"
-                      width={22}
-                      height={22}
-                    />
-                    <span className="text-sm">Site</span>
-                  </a>
-                )}
-              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                <p className="text-gray-700 mb-3">{project.description}</p>
+                <span>
+                  Tecnologias:
+                  <span className="text-sm text-orange-500 font-medium mb-3 ml-1">
+                    {project.languages}
+                  </span>
+                </span>
+                <div className="flex gap-4 justify-end pt-2">
+                  {project.videoLink && (
+                    <a
+                      href={project.videoLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1 group text-gray-800 transition hover:text-orange-500"
+                    >
+                      <Image
+                        src={iconList.youtube}
+                        alt="Vídeo"
+                        width={22}
+                        height={22}
+                      />
+                      <span className="text-sm">Vídeo</span>
+                    </a>
+                  )}
+                  {project.codeLink && (
+                    <a
+                      href={project.codeLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1 group text-gray-800 transition hover:text-orange-500"
+                    >
+                      <Image
+                        src={iconList.code}
+                        alt="Código"
+                        width={22}
+                        height={22}
+                      />
+                      <span className="text-sm">Código</span>
+                    </a>
+                  )}
+                  {project.siteLink && (
+                    <a
+                      href={project.siteLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1 group text-gray-800 transition hover:text-orange-500"
+                    >
+                      <Image
+                        src={iconList.site}
+                        alt="Site"
+                        width={22}
+                        height={22}
+                      />
+                      <span className="text-sm">Site</span>
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           ))}
