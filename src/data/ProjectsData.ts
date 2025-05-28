@@ -4,9 +4,9 @@ export const projectsData: ProjectContent[] = [
   {
     id: 1,
     title: "Pratiquei Edu",
-    languages: "Next.js, TypeScript, Tailwind CSS, Shadcn UI, Axios",
+    languages: "Next.js, TypeScript, Tailwind CSS, Shadcn UI, Axios, Zustand",
     coverPath: "/assets/images/covers/Pratiquei.png",
-    description: "Desenvolvimento da nova versão da plataforma educacional Estudie, com foco em questões e flashcards para reforço na preparação para o ENEM.",
+    description: "Desenvolvimento da nova versão da plataforma educacional Estudie, com área do usuário que inclui questões, caderno de erros, flashcards e painel de desempenho, além da área administrativa do sistema.",
     videoLink: "https://youtu.be/Hw2meQwEuyw",
     siteLink: "https://app.pratiquei.com/login",
     codeLink: undefined
@@ -16,7 +16,7 @@ export const projectsData: ProjectContent[] = [
     title: "Secure Contact",
     languages: "Next.js, TypeScript, Tailwind CSS",
     coverPath: "/assets/images/covers/Secure_Contact.png",
-    description: "Sistema de gerenciamento para controle de números telefônicos que não devem ser contactados.",
+    description: "Desenvolvimento do Secure Contact, sistema criado para evitar o banimento de números comerciais no WhatsApp devido ao envio contínuo de mensagens a usuários que solicitaram o cancelamento das comunicações.",
     videoLink: "https://youtu.be/cgKqwlX52Pc",
     siteLink: "https://secure-contact.vercel.app/",
     codeLink: "https://github.com/Maia-th/Secure-Contact"
@@ -50,5 +50,5 @@ export const projectsData: ProjectContent[] = [
     videoLink: undefined,
     siteLink: "https://du-corte.vercel.app/",
     codeLink: "https://github.com/Maia-th/Du_Corte"
-  }
+  },
 ];

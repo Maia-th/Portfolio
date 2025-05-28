@@ -95,7 +95,8 @@ export default function ProjectsPage() {
                     {project.languages}
                   </span>
                 </span>
-                <div className="flex gap-4 justify-end pt-2">
+                
+              </div><div className="flex gap-4 justify-end mt-auto px-4 pb-4">
                   {project.videoLink && (
                     <a
                       href={project.videoLink}
@@ -145,7 +146,6 @@ export default function ProjectsPage() {
                     </a>
                   )}
                 </div>
-              </div>
             </div>
           ))}
         </div>
