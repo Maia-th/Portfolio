@@ -8,9 +8,9 @@ export default function DashboardsGalleryPage() {
     <div className="min-h-screen flex flex-col bg-gray-50">
       <Navbar />
 
-      <main className="flex-1 w-full max-w-7xl mx-auto px-8 py-10 pt-24">
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-left relative w-fit pb-1">
+      <main className="flex-1 w-full max-w-7xl mx-auto px-4 min-[1350px]:px-0 py-16">
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-left relative w-fit pt-8 pb-1">
             Galeria de Dashboards
             <span className="absolute left-0 -bottom-1 w-full h-1 bg-orange-500 rounded"></span>
           </h2>
