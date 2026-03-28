@@ -16,11 +16,11 @@ export default function IndexPage() {
       {/* Seção de Projetos (O id="projetos" permite que o link da Navbar role até aqui) */}
       <main id="projetos" className="flex-1 w-full max-w-7xl mx-auto px-4 min-[1350px]:px-0 py-16">
         <div className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-left relative w-fit pt-8 pb-1 text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 text-left relative w-fit pb-2 tracking-tight pt-5">
             Projetos
-            <span className="absolute left-0 -bottom-1 w-full h-1 bg-orange-500 rounded"></span>
+            <span className="absolute left-0 -bottom-2 w-2/3 h-1.5 bg-orange-500 rounded-full"></span>
           </h2>
-          <p className="text-gray-600 mt-4 max-w-2xl">
+          <p className="text-gray-500 mt-6 text-lg max-w-2xl leading-relaxed">
             Abaixo estão alguns dos meus principais trabalhos, unindo desenvolvimento de interfaces modernas e soluções estratégicas com dados.
           </p>
         </div>
