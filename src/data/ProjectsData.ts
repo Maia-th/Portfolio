@@ -50,28 +50,32 @@ export const biDashboardsData: ProjectContent[] = [
     title: 'Dashboard Saúde dos Ativos',
     technologies: ['Power BI', 'DAX', 'ETL'],
     galleryPaths: [
-      '/assets/images/bi/saude-ativos-inicial.png',
+      '/assets/images/bi/saude-ativos-inicial-1.png',
+      '/assets/images/bi/saude-ativos-inicial-2.png',
       '/assets/images/bi/saude-ativos-fluxograma.png'
     ],
     description: 'Extração e tratamento de dados de múltiplas fontes, com modelagem de KPI de criticidade em DAX baseado em pesos exponenciais, permitindo priorização de ativos e visualização em rankings e indicadores no dashboard.',
   },
   {
     id: 'bi-correias',
-    title: 'Dashboard Monitoramento de Correias',
+    title: 'Dashboard Monitoramento das Correias',
     technologies: ['Power BI', 'DAX', 'Python', 'Tratamento de Dados'],
     galleryPaths: [
-      '/assets/images/bi/correias-inicial.png',
+      '/assets/images/bi/correias-inicial-1.png',
+      '/assets/images/bi/correias-inicial-2.png',
       '/assets/images/bi/correias-historico.png'
     ],
     description: 'Atuação desde o planejamento até a construção do BI, com tratamento e padronização de dados, correção de inconsistências e modelagem de regras de negócio em DAX. Utilização de Python para geração de gráfico avançado conforme requisitos do projeto.',
   },
   {
     id: 'bi-lubrificacao',
-    title: 'Acompanhamento de Notas de Lubrificação',
+    title: 'Dashboard Acompanhamento da Lubrificação',
     technologies: ['Power BI', 'Power Apps', 'Power Automate', 'ETL'],
     galleryPaths: [
-      '/assets/images/bi/notas-inicial.png',
-      '/assets/images/bi/notas-detalhamento.png'
+      '/assets/images/bi/notas-inicial-1.png',
+      '/assets/images/bi/notas-inicial-2.png',
+      '/assets/images/bi/notas-detalhamento.png',
+      '/assets/images/bi/planos-inicial.png'
     ],
     description: 'Desenvolvimento de BI com integração de dados de diferentes sistemas, tratamento via ETL e integração com Power Apps e Power Automate para atualização contínua de previsões de execução e observações pelos usuários.',
   }
