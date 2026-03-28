@@ -1,10 +1,12 @@
 export interface ProjectContent {
-  id: number
+  id: string;
   title: string;
-  languages: string;
-  coverPath: string;
+  technologies: string[];
   description: string;
+  coverPath?: string; 
+  galleryPaths?: string[];
   videoLink?: string;
-  siteLink: string;
+  siteLink?: string;
   codeLink?: string;
+  internalLink?: string;
 }
