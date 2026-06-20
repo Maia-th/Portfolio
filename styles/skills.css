@@ -1,0 +1,85 @@
+.skills-section {
+    padding: 6rem 0;
+}
+
+/* Grid configurado para 5 colunas no Desktop (10 cards = 2 linhas perfeitas) */
+.skills-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+}
+
+.s-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0.9rem;
+    cursor: default;
+    transition: var(--transition);
+}
+
+.s-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.s-card i {
+    font-size: 2.5rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    transition: var(--transition);
+}
+
+.s-card:hover i {
+    transform: scale(1.1);
+}
+
+.s-card h4 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    color: var(--text-main);
+}
+
+.s-card p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.3;
+}
+
+/* Responsividade para Laptops (4 colunas) */
+@media (max-width: 1100px) {
+    .skills-cards-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Responsividade para Tablets (3 colunas) */
+@media (max-width: 992px) {
+    .skills-cards-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Responsividade para Mobile Grande (2 colunas) */
+@media (max-width: 768px) {
+    .skills-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .s-card {
+        padding: 1.5rem 0.75rem;
+    }
+    .s-card i {
+        font-size: 2rem;
+    }
+}
+
+/* Responsividade para Mobile Pequeno (1 coluna) */
+@media (max-width: 480px) {
+    .skills-cards-grid {
+        grid-template-columns: 1fr;
+    }
+}

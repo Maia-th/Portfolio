@@ -1,0 +1,92 @@
+.contact-section {
+    padding: 6rem 0 8rem 0;
+}
+
+.contact-cards {
+    display: grid;
+    /* Alterado para 4 colunas no desktop */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    width: 100%;
+}
+
+.c-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.25rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Efeito de hover suave para os cards clicáveis */
+.c-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.c-card i {
+    font-size: 2.2rem;
+    color: var(--accent);
+    background-color: var(--bg-input);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+/* Inverte as cores do ícone no hover para maior destaque */
+.c-card:hover i {
+    background-color: var(--accent);
+    color: #ffffff;
+}
+
+.c-card h5 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-main);
+}
+
+.c-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    /* Garante que links longos não quebrem o card */
+    word-break: break-word; 
+}
+
+/* O card de localização não é um link, então removemos o efeito visual de clique */
+div.c-card {
+    cursor: default;
+}
+div.c-card:hover {
+    transform: none;
+    box-shadow: none;
+    border-color: var(--border);
+}
+div.c-card:hover i {
+    background-color: var(--bg-input);
+    color: var(--accent);
+}
+
+/* Responsividade para Tablets (Grid 2x2) */
+@media (max-width: 992px) {
+    .contact-cards {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+/* Responsividade para Mobile (1 coluna) */
+@media (max-width: 768px) {
+    .contact-cards {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+}
