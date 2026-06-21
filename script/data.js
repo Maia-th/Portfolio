@@ -5,7 +5,7 @@ const projectsData = [
   {
     id: 'bi-gestao-standby',
     title: 'Gestão de Ativos Standby',
-    technologies: ['Power BI', 'Power Apps', 'Power Automate', 'ETL'],
+    technologies: ['Power BI', 'Power Apps', 'Power Automate', 'ETL & Modelagem'],
     description: 'O projeto reestruturou a gestão de equipamentos Standby. Apesar dos indicadores legados estarem dentro da meta, a usina sofria paradas operacionais pois os ativos falhavam quando solicitados. O problema raiz era o monitoramento focado apenas em "tentativas de inversão", mascarando a real indisponibilidade e a falta de tratativas. Assumi a reformulação do processo ponta a ponta: na camada analítica, estruturei novos pipelines de dados (ETL) e refiz a arquitetura do Power BI com foco em UX, evidenciando a aderência real da planta e o histórico de falhas recorrentes. Na camada de operação, desenvolvi novos módulos no Power Apps criando uma arquitetura de integração bidirecional (Write-back). Orquestrada via Power Automate, essa solução estabelece um fluxo onde as falhas mapeadas no BI direcionam as ações no aplicativo, e as tratativas de campo atualizam a base de dados, refletindo imediatamente de volta nos indicadores. Essa solução uniu dados e operação, garantindo um acompanhamento semanal prático e maior confiabilidade para a planta.',
     galleryPaths: [
       './assets/images/bi/standby-inicial.png',
@@ -26,7 +26,7 @@ const projectsData = [
   },
   {
     id: 'bi-saude-ativos',
-    title: 'Dashboard Saúde dos Ativos',
+    title: 'Projeto Saúde dos Ativos',
     technologies: ['Power BI', 'DAX Avançado', 'ETL & Modelagem', 'UI/UX Analítico'],
     galleryPaths: [
     './assets/images/bi/saude-ativos-inicial-1.png',
