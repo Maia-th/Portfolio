@@ -11,7 +11,6 @@ const projectsData = [
       './assets/images/bi/standby-inicial.png',
       './assets/images/bi/standby-detalhamento.png',
       './assets/images/bi/standby-pendencias.png',
-      './assets/images/bi/standby-powerautomate.png',
       './assets/images/bi/standby-powerapps1.png',
       './assets/images/bi/standby-powerapps2.png',
     ]

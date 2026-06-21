@@ -53,21 +53,18 @@ document.addEventListener("DOMContentLoaded", () => {
             // Monta as tags
             const tagsHTML = project.technologies.map(tech => `<span class="p-tag">${tech}</span>`).join('');
 
-            // Monta os links
+            // Monta os links com a classe .btn-text em volta do texto para ocultar no mobile
             let linksHTML = '';
             
-            // Se tiver link do site, mostra o botão primário normal
             if (project.siteLink) {
-                linksHTML += `<a href="${project.siteLink}" target="_blank" class="btn btn-primary">Acessar<i class="ph ph-link"></i></a>`;
+                linksHTML += `<a href="${project.siteLink}" target="_blank" class="btn btn-primary"><span class="btn-text">Acessar</span><i class="ph ph-link"></i></a>`;
             } 
-            // Caso contrário, se tiver uma galeria, mostra o botão de tela cheia
             else if (project.galleryPaths && project.galleryPaths.length > 0) {
-                linksHTML += `<button class="btn btn-primary btn-open-gallery" data-id="${project.id}">Ver Galeria <i class="ph ph-arrows-out"></i></button>`;
+                linksHTML += `<button class="btn btn-primary btn-open-gallery" data-id="${project.id}"><span class="btn-text">Ver Galeria</span> <i class="ph ph-arrows-out"></i></button>`;
             }
 
-            // Links secundários
-            if (project.codeLink) linksHTML += `<a href="${project.codeLink}" target="_blank" class="btn btn-secondary"><i class="ph ph-github-logo"></i> Código</a>`;
-            if (project.videoLink) linksHTML += `<a href="${project.videoLink}" target="_blank" class="btn btn-secondary"><i class="ph ph-youtube-logo"></i> Demonstração</a>`;
+            if (project.codeLink) linksHTML += `<a href="${project.codeLink}" target="_blank" class="btn btn-secondary"><i class="ph ph-github-logo"></i> <span class="btn-text" style="margin-left: 0.3rem;">Código</span></a>`;
+            if (project.videoLink) linksHTML += `<a href="${project.videoLink}" target="_blank" class="btn btn-secondary"><i class="ph ph-youtube-logo"></i> <span class="btn-text" style="margin-left: 0.3rem;">Demonstração</span></a>`;
 
             // LÓGICA DE MÍDIA
             let mediaHTML = '';
@@ -112,19 +109,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
             row.innerHTML = `
                 <div class="project-media">
+                    <div class="project-header">
+                        <h4>${project.title}</h4>
+                        <div class="project-tags">
+                            ${tagsHTML}
+                        </div>
+                    </div>
                     <div class="project-img-container">
                         ${mediaHTML}
                     </div>
-                </div>
-                <div class="project-info">
-                    <h4>${project.title}</h4>
-                    <div class="project-tags">
-                        ${tagsHTML}
-                    </div>
-                    <p class="project-description">${project.description}</p>
                     <div class="project-links">
                         ${linksHTML}
                     </div>
+                </div>
+                <div class="project-info">
+                    <p class="project-description">${project.description}</p>
                 </div>
             `;
             projectsTarget.appendChild(row);

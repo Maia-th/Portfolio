@@ -2,7 +2,6 @@
     padding: 6rem 0;
 }
 
-/* Configuração Alternada Estrutural Solicitada (50% / 50% Desktop) */
 .project-row {
     display: flex;
     align-items: center;
@@ -19,11 +18,40 @@
     flex-direction: row-reverse;
 }
 
-.project-media {
+.project-media, .project-info {
     flex: 1;
     width: 50%;
 }
 
+/* ================= CABEÇALHO (ACIMA DA IMAGEM) ================= */
+.project-header {
+    margin-bottom: 1.25rem;
+}
+
+.project-header h4 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--text-main);
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.p-tag {
+    background-color: var(--bg-input);
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.3rem 0.75rem;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+}
+
+/* ================= IMAGEM E DESCRIÇÃO ================= */
 .project-img-container {
     background-color: var(--bg-surface);
     border: 1px solid var(--border);
@@ -48,45 +76,19 @@
     transform: translateY(-4px);
 }
 
-.project-info {
-    flex: 1;
-    width: 50%;
-}
-
-.project-info h4 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-.project-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 1.25rem;
-}
-
-.p-tag {
-    background-color: var(--bg-input);
-    color: var(--text-muted);
-    font-size: 0.8rem;
-    font-weight: 500;
-    padding: 0.3rem 0.75rem;
-    border-radius: 4px;
-    border: 1px solid var(--border);
-}
-
+/* ================= DESCRIÇÃO E BOTÕES ================= */
 .project-description {
     color: var(--text-muted);
     font-size: 1.05rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0; /* Zerado, pois os botões não estão mais aqui embaixo */
     text-align: justify;
 }
 
 .project-links {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     gap: 1rem;
+    margin-top: 1.25rem; /* Espaçamento entre a imagem e os botões */
 }
 
 /* ================= CARROSSEL DE IMAGENS ================= */
@@ -273,10 +275,21 @@
     .modal-btn.prev { left: 10px; }
     .modal-btn.next { right: 10px; }
     .modal-close { top: 15px; right: 15px; }
-}
-
-/* Em mobile, as setas devem ficar sempre visíveis */
-@media (max-width: 768px) {
+    .project-links .btn .btn-text {
+        display: none;
+    }
+    
+    .project-links .btn {
+        padding: 0.75rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .project-links .btn i {
+        font-size: 1.4rem;
+        margin: 0 !important;
+    }
     .carousel .carousel-btn {
         opacity: 1;
     }
