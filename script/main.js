@@ -55,16 +55,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Monta os links com a classe .btn-text em volta do texto para ocultar no mobile
             let linksHTML = '';
-            
-            if (project.siteLink) {
-                linksHTML += `<a href="${project.siteLink}" target="_blank" class="btn btn-primary"><span class="btn-text">Acessar</span><i class="ph ph-link"></i></a>`;
-            } 
-            else if (project.galleryPaths && project.galleryPaths.length > 0) {
-                linksHTML += `<button class="btn btn-primary btn-open-gallery" data-id="${project.id}"><span class="btn-text">Ver Galeria</span> <i class="ph ph-arrows-out"></i></button>`;
-            }
 
             if (project.codeLink) linksHTML += `<a href="${project.codeLink}" target="_blank" class="btn btn-secondary"><i class="ph ph-github-logo"></i> <span class="btn-text" style="margin-left: 0.3rem;">Código</span></a>`;
             if (project.videoLink) linksHTML += `<a href="${project.videoLink}" target="_blank" class="btn btn-secondary"><i class="ph ph-youtube-logo"></i> <span class="btn-text" style="margin-left: 0.3rem;">Demonstração</span></a>`;
+            if (project.galleryPaths && project.galleryPaths.length > 0) {
+                linksHTML += `<button class="btn btn-primary btn-open-gallery" data-id="${project.id}"><span class="btn-text">Ver Galeria</span> <i class="ph ph-arrows-out"></i></button>`;
+            }
+            if (project.siteLink) {
+                linksHTML += `<a href="${project.siteLink}" target="_blank" class="btn btn-primary"><span class="btn-text">Acessar</span><i class="ph ph-link"></i></a>`;
+            } 
 
             // LÓGICA DE MÍDIA
             let mediaHTML = '';

@@ -20,7 +20,7 @@ const projectsData = [
     title: 'RPA para Extração de Dados',
     technologies: ['Python', 'Playwright', 'Web Scraping', 'Automação'],
     coverPath: './assets/images/projects/rpa-cover.png',
-    description: 'O projeto resolveu uma limitação crítica de monitoramento: o sistema de origem não possuía API nem inteligência de priorização, gerando cerca de 50 alarmes por hora. Como a tomada de decisão dependia de um BI para cruzar dados e elencar os ativos mais críticos, a extração manual para alimentar o dashboard a cada 30 minutos era humanamente impossível. Desenvolvi um script de RPA em Python (Playwright) que roda 24/7, realizando o web scraping e atualizando o SharePoint a cada 5 minutos. Essa arquitetura de alta disponibilidade garante que o BI sempre consuma dados atualizados, viabilizando a priorização automática de falhas e a atuação corretiva sem qualquer intervenção manual na extração.',
+    description: 'O projeto resolveu uma limitação crítica de monitoramento: o sistema de origem não possuía API nem inteligência de priorização, gerando cerca de 50 alarmes por hora. Como a tomada de decisão dependia de um BI para cruzar dados e elencar os ativos mais críticos, a extração manual para alimentar o dashboard a cada 30 minutos era humanamente impossível. Desenvolvi um script de RPA em Python (Playwright) que roda 24/7, realizando o web scraping e atualizando o SharePoint a cada 5 minutos. Essa arquitetura de alta disponibilidade garante que o BI sempre consuma dados atualizados, viabilizando a priorização automática de falhas e a atuação preventiva sem qualquer intervenção manual na extração.',
     videoLink: 'https://youtu.be/IycyvkLRweY',
     codeLink: 'https://github.com/CMA-Itabira/Alarmes-CMA-Web',
   },
@@ -33,7 +33,7 @@ const projectsData = [
     './assets/images/bi/saude-ativos-inicial-2.png',
     './assets/images/bi/saude-ativos-fluxograma.png'
   ],
-    description: 'Produto de dados ponta a ponta (End-to-End) focado em transformar a manutenção reativa da usina em inteligência operacional orientada à confiabilidade. Liderei o projeto desde o levantamento de requisitos com engenheiros e especialistas até a entrega da solução. A engenharia de dados envolveu rotinas complexas de ETL para integrar e normalizar múltiplas fontes descentralizadas (laudos sensitivos e preditivos, análise de óleo, inspeção de correias e alarmes). No Power BI, estruturei um algoritmo em DAX com pesos exponenciais e matriz de agravantes para calcular um Score de Criticidade automatizado para cada equipamento. A interface foi desenhada com alto rigor de UX analítico: uso estratégico de indicativos visuais (emojis e cores) para evitar poluição cognitiva, navegação hierárquica rápida e fluxogramas operacionais. O resultado foi a eliminação da subjetividade e a capacidade de direcionar intervenções de forma cirúrgica, maximizando a disponibilidade operacional.',
+    description: 'Produto de dados ponta a ponta (End-to-End) focado em transformar a manutenção reativa da usina em inteligência operacional orientada à confiabilidade. Liderei o projeto desde o levantamento de requisitos com engenheiros e especialistas até a entrega da solução. A engenharia de dados envolveu rotinas complexas de ETL para integrar e normalizar múltiplas fontes descentralizadas (laudos sensitivos e preditivos, análise de óleo, inspeção de correias e alarmes). No Power BI, estruturei um algoritmo em DAX com pesos exponenciais e matriz de agravantes para calcular um Score de Criticidade automatizado para cada equipamento. A interface foi desenhada com alto rigor de UX analítico: uso estratégico de indicativos visuais para evitar poluição cognitiva, navegação hierárquica rápida e fluxogramas dos processos. O resultado foi a eliminação da subjetividade e a capacidade de direcionar intervenções de forma cirúrgica, maximizando a disponibilidade operacional.',
   },
   {
     id: 'bi-correias',
@@ -56,14 +56,34 @@ const projectsData = [
     siteLink: 'https://app.pratiquei.com/login',
   },
   {
-    id: 'portal-cma',
-    title: 'Portal CMA',
-    technologies: ['React', 'JavaScript', 'SPA', 'TailwindCSS'],
-    coverPath: './assets/images/projects/portal-cover.png',
-    description: 'Agrupador de links desenvolvido para otimizar o dia a dia da equipe, centralizando os principais acessos da operação. Construído como uma SPA (Single Page Application) componentizada em React, o portal possui arquitetura modular que simplifica a manutenção. Sua estrutura facilita a escalabilidade, permitindo a fácil adição de novos recursos.',
-    siteLink: 'https://portal-cma.vercel.app/',
-    codeLink: 'https://github.com/CMA-Itabira/Portal-CMA',
-  }
+    id: "btec-incubadora",
+    title: "Incubadora de Negócios - BTec",
+    technologies: ["React.js", "Node.js", "TypeScript", "SQL", "Eng. de Software", "Kanban"],
+    description: "Atuação abrangente no desenvolvimento Full Stack do site institucional e sistema de gestão da Incubadora de Negócios de Base Tecnológica de Itabira. A participação cobriu todo o ciclo de vida do software (SDLC), iniciando na engenharia de requisitos com a elaboração da documentação de visão (RF e RNF). A execução técnica englobou a arquitetura da informação completa (diagramas ER e dicionário de dados em SQL), desenvolvimento do back-end (Node.js/TypeScript) com versionamento via GitFlow, prototipação de UI/UX no Figma e implementação da interface em React.js. Todo o ecossistema foi gerido sob metodologias ágeis (Kanban).",
+    galleryPaths: [
+        "./assets/images/projects/btec-1.png",
+        "./assets/images/projects/btec-2.png", 
+        "./assets/images/projects/btec-3.png", 
+        "./assets/images/projects/btec-4.png",  
+        "./assets/images/projects/btec-5.png",  
+        "./assets/images/projects/btec-6.png",  
+        "./assets/images/projects/btec-7.png",  
+        "./assets/images/projects/btec-8.png",  
+        "./assets/images/projects/btec-9.png",  
+        "./assets/images/projects/btec-10.png",  
+        "./assets/images/projects/btec-11.png",  
+        "./assets/images/projects/btec-12.png",  
+        "./assets/images/projects/btec-13.png",  
+        "./assets/images/projects/btec-14.png",  
+        "./assets/images/projects/btec-15.png",  
+        "./assets/images/projects/btec-16.png",  
+        "./assets/images/projects/btec-17.png",  
+        "./assets/images/projects/btec-18.png",  
+        "./assets/images/projects/btec-19.png",  
+        "./assets/images/projects/btec-20.png"
+    ],
+    siteLink: "https://btec-itabira.vercel.app/"
+}
 ];
 
 // =========================================================================
@@ -74,24 +94,24 @@ const experiencesData = [
     role: 'Analista de Dados',
     company: 'Vale S.A. (Monitoramento de Ativos - CMA)',
     date: 'Jul/2025 – Presente',
-    description: 'Desenvolvimento de pipelines ETL, dashboards estratégicos (Power BI/DAX) e automações (Python/Power Platform) para monitoramento e confiabilidade de ativos.'
+    description: 'Atuação no ciclo completo do dado: orquestração de automações (Python/RPA) e pipelines ETL, unida à modelagem de dashboards gerenciais (Power BI) para a confiabilidade de ativos.'
   },
   {
     role: 'Desenvolvedor Front-End (Freelance)',
     company: 'Pratiquei Educacional',
     date: 'Jan/2025 – Jun/2025',
-    description: 'Liderança técnica na construção da interface com Next.js e TypeScript, focando em alta performance, UI/UX e consumo de APIs RESTful.'
+    description: 'Liderança técnica na arquitetura de interfaces com Next.js e TypeScript. Foco em componentização avançada, alta performance, rigor em UI/UX e consumo otimizado de APIs.'
   },
   {
     role: 'Desenvolvedor Full Stack (Extensão)',
     company: 'Universidade Federal de Itajubá (BTec)',
     date: 'Mai/2024 – Dez/2024',
-    description: 'Desenvolvimento ponta a ponta do sistema de gestão, unindo modelagem de banco de dados relacional (SQL) e Front-End (React.js).'
+    description: 'Engenharia de software de ponta a ponta sob metodologias ágeis. Atuação desde o levantamento de requisitos e modelagem relacional (SQL) até a construção da interface em React.js.'
   },
   {
     role: 'Analista de Dados (Estágio)',
     company: 'Prefeitura Municipal de Itabira',
     date: 'Mai/2023 – Abr/2024',
-    description: 'Atuação em Data Quality de bases governamentais e criação de dashboards de missão crítica (Looker Studio) para KPIs de saúde pública.'
+    description: 'Liderança em processos de Data Quality de bases governamentais e desenvolvimento de painéis de missão crítica (Looker Studio) para monitoramento estratégico da saúde pública.'
   }
 ];
