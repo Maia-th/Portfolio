@@ -9,10 +9,16 @@ const projectsData = [
     description: 'O projeto reestruturou a gestão de equipamentos Standby. Apesar dos indicadores legados estarem dentro da meta, a usina sofria paradas operacionais pois os ativos falhavam quando solicitados. O problema raiz era o monitoramento focado apenas em "tentativas de inversão", mascarando a real indisponibilidade e a falta de tratativas. Assumi a reformulação do processo ponta a ponta: na camada analítica, estruturei novos pipelines de dados (ETL) e refiz a arquitetura do Power BI com foco em UX, evidenciando a aderência real da planta e o histórico de falhas recorrentes. Na camada de operação, desenvolvi novos módulos no Power Apps criando uma arquitetura de integração bidirecional (Write-back). Orquestrada via Power Automate, essa solução estabelece um fluxo onde as falhas mapeadas no BI direcionam as ações no aplicativo, e as tratativas de campo atualizam a base de dados, refletindo imediatamente de volta nos indicadores. Essa solução uniu dados e operação, garantindo um acompanhamento semanal prático e maior confiabilidade para a planta.',
     galleryPaths: [
       './assets/images/bi/standby-inicial.png',
-      './assets/images/bi/standby-detalhamento.png',
+      './assets/images/bi/standby-detalhamento-1.png',
+      './assets/images/bi/standby-detalhamento-2.png',
       './assets/images/bi/standby-pendencias.png',
       './assets/images/bi/standby-powerapps1.png',
       './assets/images/bi/standby-powerapps2.png',
+      './assets/images/bi/standby-powerapps3.png',
+      './assets/images/bi/standby-powerapps4.png',
+      './assets/images/bi/standby-powerapps5.png',
+      './assets/images/bi/standby-powerapps6.png',
+      './assets/images/bi/standby-powerapps7.png'
     ]
   },
   {
